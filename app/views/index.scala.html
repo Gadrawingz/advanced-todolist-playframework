@@ -1,5 +1,9 @@
 @(message: String)
 
-@main("TodoList") {
-<h2>Homepage</h2>
+@main("My form") {
+@message
+    <form action="@routes.Application.greet", method="GET">
+        <input type="text" name="name" />
+        <button>Submit</button>
+    </form>
 }

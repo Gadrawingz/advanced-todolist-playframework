@@ -4,12 +4,26 @@ import play.*;
 import play.mvc.*;
 
 import views.html.*;
+import javax.inject.Inject;
+
 
 public class Application extends Controller {
 
+    @Inject
+    FormFactory formFactory;
+
     // Index page
     public static Result index() {
-        return ok(index.render("Welcome to Home page"));
+
+        return ok(index.render("Enter your name: "));
+    }
+
+    public static Result greet() {
+        String name = formFactory.form().bindFromRequest.get("name");
+        StringBuilder sb = new StringBuilder("Hello ");
+        sb.append(name);
+
+        return ok(sb.toString());
     }
 
     // About us
@@ -36,5 +50,7 @@ public class Application extends Controller {
     public static Result userSignup() {
         return ok(index.render("Signup Page"));
     }
+
+
 
 }
