@@ -1,4 +1,4 @@
-@(title: String)(content: Html)
+@(title: Html, nav: String = "")(content: Html)
 
 <!DOCTYPE html>
 <html lang="en">
@@ -81,12 +81,12 @@
             <div class="container">
                 <ul class="nav page-navigation">
                     <li class="nav-item">
-                        <a class="nav-link" href="/">
+                        <a class="nav-link" href="@routes.Application.index()">
                             <i class="mdi mdi-home menu-icon"></i>
                             <span class="menu-title">Home</span>
                         </a>
                     </li>
-
+                    @routes.Application.index()
                     <li class="nav-item">
                         <a class="nav-link" href="/about">
                             <i class="mdi mdi-clipboard-text menu-icon"></i>
@@ -94,7 +94,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/contact">
+                        <a class="nav-link" href="/contacts">
                             <i class="mdi mdi-contacts menu-icon"></i>
                             <span class="menu-title">Contact Us</span>
                         </a>
@@ -107,15 +107,14 @@
                         </a>
                     </li>
 
-
                     <li class="nav-item">
-                        <a class="nav-link" href="/login">
+                        <a class="nav-link" href="/">
                             <i class="mdi mdi-lock-plus menu-icon"></i>
                             <span class="menu-lock">Login</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/signup">
+                        <a class="nav-link" href="@routes.SignUp.blank()">
                             <i class="mdi mdi-account-plus menu-icon"></i>
                             <span class="menu-title">Signup</span>
                         </a>
