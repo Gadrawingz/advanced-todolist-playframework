@@ -10,14 +10,14 @@ public class Application extends Controller {
         return ok(index.render());
     }
 
-    // Support page
-    /*public static Result support() {
-        return ok(index.render("Support"));
+    // About us
+    /*public static Result aboutUs() {
+        return ok(index.render());
     }*/
 
     // Login Page
-    /* public static Result userLogin() {
-        return ok(index.render("Login Page"));
+    /*public static Result todoList() {
+        return ok(index.render());
     }*/
 
 }

@@ -3,16 +3,16 @@
 # ~~~~
 
 # Home page
-GET     /                       controllers.Application.index()
+GET     /                           controllers.Application.index()
 
 # About
-#GET     /about                  controllers.Application.aboutUs()
+#GET     /about                      controllers.Application.aboutUs()
 
 # Support
-#GET     /support                controllers.Application.support()
+#GET     /todos                      controllers.Application.todoList()
 
 # User Login
-#GET     /login                  controllers.Application.userLogin()
+#GET     /login                      controllers.Application.index()
 
 # Signup
 GET     /signup                     controllers.SignUp.blank()

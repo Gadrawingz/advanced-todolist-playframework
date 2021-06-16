@@ -1,9 +1,7 @@
 package models;
-
 import java.util.*;
 
 public class Countries {
-
     public static List<String> list() {
         List<String> all = new ArrayList<String>();
         all.add("France");

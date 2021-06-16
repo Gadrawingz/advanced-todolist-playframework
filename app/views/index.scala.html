@@ -1,23 +1,80 @@
-@main(Html("Form samples")) {
+@main(Html("Homepage")) {
 
-<h2>Sign up form</h2>
+<div class="container-fluid page-body-wrapper">
+    <div class="main-panel">
+        <div class="content-wrapper">
+            <div class="page-header">
+                <h3 class="page-title txt-success">Call me Gad, My first app loading!</h3>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page"> Welcome page</li>
+                    </ol>
+                </nav>
+            </div>
 
-<p>
-    Demonstrate a classical sign up form.
-</p>
 
-<p>
-    <a class="btn" href="@routes.SignUp.blank">View sample »</a>
-</p>
+            <!-- image card row starts here -->
+            <div class="row">
+                <div class="col-sm-4 stretch-card grid-margin">
+                    <div class="card">
+                        <div class="card-body p-0">
+                            <img class="img-fluid w-100" src="../assets/images/dashboard/img_1.jpg" alt="" />
+                        </div>
+                        <div class="card-body px-3 text-dark">
+                            <div class="d-flex justify-content-between">
+                                <p class="text-muted font-13 mb-0">MY GHETTO</p>
+                                <i class="mdi mdi-heart-outline"></i>
+                            </div>
+                            <div class="d-flex justify-content-between font-weight-semibold">
+                                <p class="mb-0">
+                                    <i class="mdi mdi-road-variant star-color pr-1"></i>Huye district</p>
+                                <p class="mb-0">4B frw</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 stretch-card grid-margin">
+                    <div class="card">
+                        <div class="card-body p-0">
+                            <img class="img-fluid w-100" src="../assets/images/dashboard/img_2.jpg" alt="" />
+                        </div>
+                        <div class="card-body px-3 text-dark">
+                            <div class="d-flex justify-content-between">
+                                <p class="text-muted font-13 mb-0">MY DREAM CITY</p>
+                                <i class="mdi mdi-heart-outline"></i>
+                            </div>
+                            <div class="d-flex justify-content-between font-weight-semibold">
+                                <p class="mb-0">
+                                    <i class="mdi mdi-road-variant star-color pr-1"></i>London</p>
+                                <p class="mb-0">8B frw</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 stretch-card grid-margin">
+                    <div class="card">
+                        <div class="card-body p-0">
+                            <img class="img-fluid" src="../assets/images/dashboard/img_3.jpg" alt="" />
+                        </div>
+                        <div class="card-body px-3 text-dark">
+                            <div class="d-flex justify-content-between">
+                                <p class="text-muted font-13 mb-0">MY HOODS</p>
+                                <i class="mdi mdi-heart-outline"></i>
+                            </div>
+                            <div class="d-flex justify-content-between font-weight-semibold">
+                                <p class="mb-0">
+                                    <i class="mdi mdi-road-variant star-color pr-1"></i>Mars</p>
+                                <p class="mb-0">6B frw</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-<h2>Contact form</h2>
 
-<p>
-    Demonstrate a contact manager that allows the addition of complex contact information.
-</p>
-
-<p>
-    <a class="btn" href="@routes.Contacts.blank">View sample »</a>
-</p>
+        </div>
+    </div>
+</div>
 
 }
